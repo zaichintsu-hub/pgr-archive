@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Single-Target Composition</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .back-btn {
+            display: inline-block;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 8px 20px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+        .back-btn:hover {
+            border-color: var(--accent-red);
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-layer background-layer-1"></div>
+    <div class="background-layer background-layer-2"></div>
+
+    <!-- TOP NAV BAR -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <span class="brand-logo">PUNISHING</span>
+            <span class="brand-sub">GRAY RAVEN</span>
+        </div>
+        <div class="nav-status">
+            <span class="status-indicator"></span>
+            <span class="status-text">SYSTEM: ONLINE</span>
+        </div>
+    </header>
+
+    <!-- MAIN FULL-WIDTH STICKY HEADER BANNER -->
+    <section class="hero-section">
+        <div class="hud-frame">
+            <div class="hero-banner-inner">
+                <div class="sys-tag">CONCEPT FILE</div>
+                <h1 class="hero-title">SINGLE-TARGET TEAM COMPOSITION</h1>
+                <p class="hero-subtitle">A NEW COMPETITIVE CATEGORY OF TEAM COMPOSITIONS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-content">
+
+        <!-- SINGLE CONCEPT BODY PANEL -->
+        <section class="content-panel">
+            
+            <!-- CONCEPT OVERVIEW -->
+            <h3 class="data-heading">CONCEPT OVERVIEW</h3>
+            <div class="data-block">
+                <p class="concept-text">This concept updates the game’s combat meta by introducing a second team archetype: the Single-Target Team Composition, expanding the existing combat ecosystem by establishing distinct team specializations for multi-target combat and single-target combat, while bringing Punishing: Gray Raven’s meta structure into alignment with modern gacha gaming standards.</p>
+                <p class="concept-text">Uniframes serve as the core target of this concept, being the optimal class to specialize in single-target combat. Their kits will be designed to provide significantly stronger single-target performance than comparable Omniframes, while they will have limited multiple-targets and AoE capabilities, preventing them from replacing Omniframes in multi-target content.</p>
+                <div class="sys-note">
+                    <strong>Note:</strong> This concept does not propose redefining Omniframes as “Multiple-Target Specialists”, Omniframes retain their original, varied functionality, while only updating Uniframes to noticeably be better single-target specialists through character skills and kits.
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- MODERN UNIFRAME MODEL -->
+            <h3 class="data-heading">MODERN UNIFRAME MODEL</h3>
+            
+            <h4 class="sub-heading">OVERVIEW & APPROACH</h4>
+            <div class="data-block">
+                <p class="concept-text">The Single-Target DPS role will be established via one of two development approaches:</p>
+                <ul class="sys-list">
+                    <li><strong>Approach A - Vanguard Modernization & Paradigm Shift:</strong> A modern generation of Vanguard units, retaining the original Class Skill. Can be distinguished from the older generation by slight UI changes.<br>
+                    <span class="highlight">e.g.</span> A different Uniframe mark on the character icon - different color / a star symbol attached in the center of the mark.</li>
+                    <li><strong>Approach B - New Uniframe Class:</strong> The introduction of a new Uniframe class category designed specifically to apply the new modernized model, while completely abandoning Vanguard class.</li>
+                </ul>
+                <p class="concept-text">The new Uniframe model departs from the legacy A-Rank-style Uniframe investment model and adopts standard S-Rank parameters (60 pull guarantee, 30 Inver Shards on duplicate, dedicated CUBs, Harmony Awakening on Signature Weapons, Effect system, Time Lag Calculation).</p>
+            </div>
+
+            <h4 class="sub-heading">MODERNIZED UNIFRAME BANNER</h4>
+            <ul class="sys-list">
+                <li>100% guarantee at 60 pulls.</li>
+                <li>Duplicates grant 30 Inver Shards.</li>
+                <li>New exclusive Uniframe Banner Tickets, earned through Uniframe game mode – returned Operation Uniframe.</li>
+                <li>100% guarantee for the original seven Uniframe Vanguards at 10 pulls + Their duplicates grant 18 Inver Shards.</li>
+            </ul>
+            <p class="concept-text"><b>The original Uniframe units (Camu: Crocotta, Qu: Pavo, Selena: Tempest, Roland: Flamebeau, Pulao: Dragontoll, Haicma: Starveil, Noan: Arca) will retain the older approach and will not be modernized.</b></p>
+            <h4 class="sub-heading">CHARACTER SKILLS AND KIT</h4>
+            <p class="concept-text">Will be repositioned and engineered to highly support the single-target specialty, focusing mainly on single-target DMG, Burst DMG, with less focus (or none) on AoE DMG, DoT DMG and Gather.<br>
+            <span class="highlight">e.g.</span><strong> SSS Evolution Skill:</strong> Increases the Extra DMG Bonus by 50%, and by an additional 75% when facing less than 2 enemies.</p>
+
+            <h4 class="sub-heading">UNIFRAME SKILLS</h4>
+            <ul class="sys-list">
+                <li><strong>Redefined</strong> to slightly follow Leap Skills’ functionality.</li>
+                <li><strong>From:</strong> Niche skills that specialize specifically against enemies with Finisher Gauge in Special Dispatch Areas.</li>
+                <li><strong>To:</strong> A secondary specialization, partly supporting Uniframes in regular combat, and significantly enhancing their effectiveness in Special Dispatch Areas, where enemies have Finisher Gauge.</li>
+            </ul>
+
+                <div class="rupture-effect-bar">
+                    <div class="bar-accent"></div>
+                    <div class="bar-content">
+                        <div class="bar-title">UNIFRAME SKILLS</div>
+            <h4 class="sub-heading">SPEED ATTACK</h4>
+            <p class="concept-text">Given another trigger condition in addition to its baseline functionality.<br>
+            <span class="highlight">Suggestion:</span> A Perfect Parry triggers a Quick Time Event (indicated by a flashing Dodge button), during which holding Dodge consumes 30% Dodge Gauge to trigger Speed attack.</p>
+
+            <h4 class="sub-heading">FINISHING MOVE</h4>
+            <p class="concept-text">In addition to the baseline functionality, I suggest giving it a special trigger condition that <b>triggers only against regular enemies and does not trigger against enemies with Finisher Gauge</b>, fitting into the character’s kit and rotation + an execution threshold.<br>
+            <span class="highlight">e.g.</span> After triggering <b>Assault-Rising Combo</b> on a target with less than 30% remaining HP, tapping Basic Attack will have Noan: Arca trigger Finishing Move.
+            <i style="color: var(--accent-red);"><b>Note:</b> This skill will not be implemented for Noan: Arca under this concept, as the existing seven Uniframes retain the legacy approach. Noan: Arca is used here solely as an example to illustrate the trigger.</i></p>
+            <p class="concept-text"><strong>Boss-Type Enemies:</strong> For standard bosses lacking the Finisher Gauge, whether to make this new trigger condition effective against them or not is up to Kuro.<br>
+            In general, making Finishing Moves active in regular combat is totally up to Kuro.</p>
+
+            <h4 class="sub-heading">ENHANCED SPEED ATTACK & FINISHING MOVE</h4>
+            <p class="concept-text">In addition to their baseline functionality, all Elemental DMG dealt by Speed Attack and Finishing Move is converted to Effect DMG when the character's Effect is active. These skills will serve as the most effective source of Burst DMG and AoE for higher efficiency in Uniframe Special Dispatch Areas, where there are multiple enemies with Finisher Gauge per stage.</p>
+
+            <h4 class="sub-heading">ENHANCED TEAM</h4>
+            <p class="concept-text">Make sure the original 2 skills are applied to the new Uniframes (one per character) in a regular manner, for varied roles in the Uniframe team composition.</p>
+            <ul class="sys-list">
+                <li>After any Uniframe in the team finishes an enemy, restores 20% of self max HP and increases [the deployed character’s element & effect] DMG of all Uniframes in the team by 10% for 15s.</li>
+                <li>After any Uniframe in the team uses a Finishing Move, the Vanguard Skill of the next entering Uniframe increases by 50%, and its duration extends by 15s.</li>
+            </ul>
+            <p Class="concept-text">
+            <span class="highlight">Suggestion:</span> For the second skill, make sure it universally increases the next Uniframe's Class Skill effectiveness, in case of introducing new Uniframe classes later.</p>
+
+                                </div>
+                </div>
+            <h4 class="sub-heading">EFFECT SYSTEM</h4>
+            <p class="concept-text">Similarly to modern characters, Uniframes unlock the Effect and its mechanics via Core Skills. Incorporates a unique consumption mechanism that supports the burst and speedrun specialty:</p>
+            <ul class="sys-list">
+                <li>Triggering [a character-specific skill fitting into their rotation, such as Signature Move] instantly consumes all accumulated Effect stacks to deal Effect Burst DMG based on the Effect's current charge level.</li>
+            </ul>
+
+            <h4 class="sub-heading">HARMONY AWAKENING</h4>
+            <p class="concept-text">Unlocks skills that support the identity and role of Uniframes via Signature Weapon’s Harmony Awakening skills.<br>
+            <span class="highlight">e.g.</span> When a normal or elite target has ≤ 25% HP, the next attack will instantly deplete the remaining HP. 45s cooldown.</p>
+
+            <h4 class="sub-heading">WEAPON HARMONY I</h4>
+            <p Class="concept-text"><span class="highlight">Slight System Changes:</span> When a fully equipped 6-piece Uniframe Memory Set is used for Weapon Harmony, the Memory Set level will further increase.</p>
+
+            <hr class="section-divider" />
+
+            <!-- ENDGAME CONTENT & TEAM COMPOSITIONS -->
+            <h3 class="data-heading">ENDGAME CONTENT & TEAM COMPOSITIONS</h3>
+            
+            <h4 class="sub-heading">SINGLE-TARGET TEAM COMPS</h4>
+            <ul class="sys-list">
+                <li>Uses Vanguard as the main DPS.</li>
+                <li>Uses Breaker/Tank for DMG reduction, and Overlinker/Amplifier for team buffs and healing.</li>
+                <li>Best for single-target and Boss stages (e.g. Phantom Pain Cage).</li>
+                <li><span class="highlight">Recommended:</span> Introduce a new Uniframe class to occupy the Sub-DPS slot in later patches.</li>
+            </ul>
+
+            <h4 class="sub-heading">UNIFRAME TEAM COMPS (Special Dispatch Areas)</h4>
+            <ul class="sys-list">
+                <li>Uniframe’s second specialty team.</li>
+                <li>Uses 3 Uniframes / 2 Uniframes and one Omniframe for DMG amplification on standby.</li>
+                <li>Best for stages where enemies have Finisher Gauge.</li>
+                <li>Introducing a new Sub-DPS Uniframe class is also recommended for this composition.</li>
+            </ul>
+
+            <h4 class="sub-heading">ENDGAME CONTENT DISTRIBUTION</h4>
+            <div class="table-container">
+                <table class="sys-table">
+                    <thead>
+                        <tr>
+                            <th>ENDGAME MODE</th>
+                            <th>RESET CADENCE</th>
+                            <th>PRIMARY STAGE FUNCTION</th>
+                            <th>FAVORED COMPOSITION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>War Zone</td>
+                            <td>Weekly</td>
+                            <td>Multi-target Waves</td>
+                            <td>Omniframe Teams</td>
+                        </tr>
+                        <tr>
+                            <td>Phantom Pain Cage</td>
+                            <td>Weekly</td>
+                            <td>Single-target–Boss</td>
+                            <td>Single-Target Teams (Uniframe DPS)</td>
+                        </tr>
+                        <tr>
+                            <td>Operation Uniframe <b>(RETURN)</b></td>
+                            <td>Weekly</td>
+                            <td>Special Dispatch Areas (Finisher Gauge enemies)</td>
+                            <td>Uniframe Teams</td>
+                        </tr>
+                        <tr>
+                            <td>Simulated Siege</td>
+                            <td>Weekly</td>
+                            <td>1. Uniframe Stage<br>2. A-rank Omniframe Stage<br>3. S-rank Omniframe Stage</td>
+                            <td>Locked Units</td>
+                        </tr>
+                        <tr>
+                            <td>Norman Revival Plan</td>
+                            <td>Bi-Weekly</td>
+                            <td>Stage paths featuring multi-target encounters leading to a single-target Boss final node.</td>
+                            <td>Paths: Omniframe Teams<br>Final Stage: Single-Target Teams (Uniframe DPS)</td>
+                        </tr>
+                        <tr>
+                            <td>Clash Reflection</td>
+                            <td>Bi-Weekly</td>
+                            <td>Rotating stage modifiers. <i>Introduce a Uniframe-focused modifier (Finisher Gauge) to the rotation.</i></td>
+                            <td>Dynamic Roster</td>
+                        </tr>
+                        <tr>
+                            <td>Guild Expedition</td>
+                            <td>Seasonal</td>
+                            <td>Multi-enemy route sectors leading to a final Boss sector</td>
+                            <td>Flexible</td>
+                        </tr>
+                        <tr>
+                            <td>Babel Tower</td>
+                            <td>Seasonal</td>
+                            <td>Variable encounters (Horde, Single-Target, and Execution stages)</td>
+                            <td>Full Roster Deployment</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- UNIFRAME CLASS SUGGESTIONS -->
+            <h3 class="data-heading">UNIFRAME CLASS SUGGESTIONS</h3>
+            <div class="sys-tag"><i>Hover to view details</i></div>
+            <div class="class-grid">
+                <!-- STRIKER -->
+                <div class="class-card">
+                    <div class="class-icon">
+                        <!-- REPLACE_WITH_IMAGE_DIRECTORY_HERE -->
+                        <img src="./ConceptClass/Striker.png" alt="Striker Icon" />
+                    </div>
+                    <div class="class-content">
+                        <div class="class-title">STRIKER</div>
+                        <p class="class-desc">Focused on execution, can exploit enemy vulnerabilities and unleash powerful strikes.</p>
+                        <p class="class-mechanic">Gains 20% Extra DMG Bonus for 10s upon entering the battlefield. A 3-Ping grants <b style="color: var(--accent-red);">Matrix Strike</b>, up to a maximum of 3. When the character triggers Matrix, <b style="color: var(--accent-red);">Matrix Strike</b> will grant the next attack 20% / 30% / 40% Extra DMG Bonus. Stacks are lost upon character switch.</p>
+                    </div>
+                </div>
+
+                <!-- ECHOER -->
+                <div class="class-card">
+                    <div class="class-icon">
+                        <!-- REPLACE_WITH_IMAGE_DIRECTORY_HERE -->
+                        <img src="./ConceptClass/Echoer.png" alt="Echoer Icon">
+                    </div>
+                    <div class="class-content">
+                        <div class="class-title">ECHOER</div>
+                        <p class="class-desc">Focused on accumulation, can compound inflicted damage and release it in a powerful detonation.</p>
+                        <p class="class-mechanic">Attacks apply <b style="color: var(--accent-red);">Detonation Mark</b> that accumulates 30% of all damage dealt to the target for 5s and then deals all accumulated damage.</p>
+                    </div>
+                </div>
+
+                <!-- WITHERER -->
+                <div class="class-card">
+                    <div class="class-icon">
+                        <!-- REPLACE_WITH_IMAGE_DIRECTORY_HERE -->
+                        <img src="./ConceptClass/Witherer.png" alt="Witherer Icon" />
+                    </div>
+                    <div class="class-content">
+                        <div class="class-title">WITHERER</div>
+                        <p class="class-desc">Focused on erosion, can directly compromise and diminish the structural limits of enemies.</p>
+                        <p class="class-mechanic">Attacks reduce the target's Max HP by 20% for 5s.</p>
+                    </div>
+                </div>
+
+                <!-- MARTYR -->
+                <div class="class-card">
+                    <div class="class-icon">
+                        <img src="ConceptClass/Martyr.png" alt="Martyr Icon">
+                    </div>
+                    <div class="class-content">
+                        <div class="class-title">MARTYR</div>
+                        <p class="class-desc">Focused on sacrifice, can convert frame damage into heightened offensive output while healing team members.</p>
+                        <p class="class-mechanic">For every 2% HP lost, gain +0.6% Extra DMG Bonus.</p>
+                    </div>
+                </div>
+
+                <!-- CATALYST -->
+                <div class="class-card">
+                    <div class="class-icon">
+                        <!-- REPLACE_WITH_IMAGE_DIRECTORY_HERE -->
+                        <img src="./ConceptClass/Catalyst.png" alt="Catalyst Icon">
+                    </div>
+                    <div class="class-content">
+                        <div class="class-title">CATALYST</div>
+                        <p class="class-desc">Focused on synergy, can strengthen allies and unleash massive energy upon retreat.</p>
+                        <p class="class-mechanic">Catalyst’s QTEs grant <b style="color: var(--accent-red);">Catalysis</b> that increases team members’ ATK by 7.5% and the Elemental DMG Bonus of the Catalyst's element by 7.5%, stacks up to a maximum of 4 stacks. When the Catalyst is switched in, gain 1 <b style="color: var(--accent-red);">Catalysis</b>. On exit, consumes all available <b style="color: var(--accent-red);">Catalysis</b> to deal 500% / 1000% / 1500% / 2000% Elemental DMG of the Catalyst's element.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- CONCLUSION -->
+            <h3 class="data-heading">CONCLUSION</h3>
+            <div class="data-block">
+                <p class="concept-text">The original Uniframe model—designed around a low-cost, F2P-friendly investment structure—has ultimately proven unviable for sustaining long-term meta relevance and game profitability. Abandoning this approach in favor of a standard premium S-Rank model is essential to secure development revenue and justify high-end character design.</p>
+                <p class="concept-text">Pivoting Uniframes into dedicated single-target specialists perfectly complements this premium pivot. By strictly isolating modern Uniframe kits from multiple-targets and AoE capabilities, and repositioning them to single-target and burst capabilites, this model drives pull incentives without causing power-creep or invalidating Omniframes—establishing a symbiotic meta where both archetypes remain essential. So, rather than forcing Uniframes into niche gimmick stages, single-target specialization grants full player deployment agency, with single-target and boss stages serving as their natural peak environment.</p>
+                <p class="concept-text">Furthermore, the exclusive Uniframe combat ecosystem remains one of the most highly admirable mechanics within the player community. The abandonment of Uniframe releases differs fundamentally from class replacements—such as Support class being supplanted by an updated version–Amplifier. Uniframes are not merely a class; they are an entirely unique frame category that has been completely abandoned. Reviving Uniframes as competitive S-rank single-target specialists reclaims a universally liked combat identity, transforming a defunct system into a profitable cornerstone of the modern endgame meta.</p>
+            </div>
+
+        </section>
+                
+        <a href="home.html" class="back-btn">&lt; RETURN TO DIRECTORY</a>
+
+    </main>
+            <!-- CREDITS BAR -->
+        <section class="credits-bar">
+            <div class="credits-header">CREDITS</div>
+
+            <ul class="credits-list">
+                <li>DISCORD: .badfortuneflower</li>
+                <li>TWITTER: Cradle__00</li>
+            </ul>
+            <br>
+        </section>
+    <!-- FOOTER DIAGNOSTICS -->
+    <footer class="footer-diagnostics">
+        <div class="footer-left">
+        COMMANDANT NAME: Peace Walker
+        </div>
+        <div class="footer-right">
+        COMMANDANT ID: EU-28562109
+        </div>
+    </footer>
+    <script src="bg-switcher.js"></script>
+</body>
+</html>

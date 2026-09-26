@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Original Vanguard Model Fix</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .back-btn {
+            display: inline-block;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 8px 20px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+        .back-btn:hover {
+            border-color: var(--accent-red);
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-layer background-layer-1"></div>
+    <div class="background-layer background-layer-2"></div>
+
+    <!-- TOP NAV BAR -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <span class="brand-logo">PUNISHING</span>
+            <span class="brand-sub">GRAY RAVEN</span>
+        </div>
+        <div class="nav-status">
+            <span class="status-indicator"></span>
+            <span class="status-text">SYSTEM: ONLINE</span>
+        </div>
+    </header>
+
+    <!-- MAIN FULL-WIDTH STICKY HEADER BANNER -->
+    <section class="hero-section">
+        <div class="hud-frame">
+            <div class="hero-banner-inner">
+                <div class="sys-tag">CONCEPT FILE</div>
+                <h1 class="hero-title">ORIGINAL VANGUARD MODEL FIX</h1>
+                <p class="hero-subtitle">MODERNIZED ROLE EXPANSION & COMPETITIVE REINTEGRATION</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-content">
+        
+
+        <!-- SINGLE CONCEPT BODY PANEL -->
+        <section class="content-panel">
+            
+            <!-- CONCEPT OVERVIEW -->
+            <h3 class="data-heading">CONCEPT OVERVIEW</h3>
+            <div class="data-block">
+                <p class="concept-text">This concept preserves the original purpose and direction of Uniframe Vanguards while establishing a modernized, fixed model that moves them away from a niche identity and strongly encourages regular player investment.</p>
+                <p class="concept-text">The original A-Rank-like investment approach is preserved, following the original investment system:</p>
+                <ul class="sys-list">
+                    <li>100% guarantee at 10 pulls via Uniframe Banner.</li>
+                    <li>No CUB requirement.</li>
+                    <li>Duplicates grant 18 Inver Shards.</li>
+                </ul>
+                <p class="concept-text">At the same time, the model expands their relevance into more endgame content, rather than making their competitive value dependent on niche Uniframe-specific stages.</p>
+                <div class="sys-note">
+                    <strong>Note:</strong> This model applies only to future Uniframes. The current seven Uniframe Vanguards retain the existing model and receive no updates under this concept.
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- FIXED VANGUARD MODEL SPECIFICATIONS -->
+            <h3 class="data-heading">FIXED VANGUARD MODEL SPECIFICATIONS</h3>
+            
+            <h4 class="sub-heading">UNIFRAME SKILLS</h4>
+            <div class="data-block">
+                <p class="concept-text">At SSS Rank, the character unlocks additional functionality for their Uniframe Skills, allowing Speed Attack and Finishing Move to interact with regular enemies that lack a Finisher Gauge:</p>
+            </div>
+                <div class="rupture-effect-bar">
+                    <div class="bar-accent"></div>
+                    <div class="bar-content">
+                        <div class="bar-title">UNIFRAME SKILLS</div>
+                        <h4 class="sub-heading">SPEED ATTACK</h4>
+                        <p class="concept-text">In addition to the original kit: A Perfect Parry triggers a 1s Quick Time Event (indicated by a flashing Dodge Button), during which holding Dodge will deplete 30% Dodge Gauge to trigger Speed Attack.</p>
+
+                        <h4 class="sub-heading">FINISHING MOVE</h4>
+                        <p class="concept-text">In addition to the baseline functionality, I suggest giving it a special trigger condition that <b>triggers only against regular enemies and does not trigger against enemies with Finisher Gauge</b>, fitting into the character’s kit and rotation + an execution threshold.<br></p>
+                        </ul>
+                        <p class="concept-text">
+                            <span class="highlight">Example:</span> After triggering <b>Assault-Rising Combo</b> on a target with less than 30% remaining HP, tapping Basic Attack will have Noan: Arca trigger Finishing Move.
+                            <i style="color: var(--accent-red);"><b>Note:</b> This skill will not be implemented for Noan: Arca under this concept, as the existing seven Uniframes retain the legacy approach. Noan: Arca is used here solely as an example to illustrate the trigger.</i>
+                        </p>
+                        <p class="concept-text"><strong>Boss-Type Enemies:</strong> For regular bosses lacking the Finisher Gauge, whether to make this new trigger condition effective against them or not is up to Kuro.</p>
+
+                                </div>
+                </div>
+
+            
+            <h4 class="sub-heading">CHARACTER SKILLS, CORE SKILLS AND KIT</h4>
+            <p class="concept-text">Character Skills, Core Skills, and overall kits will focus more heavily on Burst DMG and Single-Target DMG, with less emphasis on AoE and DoT. This gives Uniframes greater potential in single-target and speedrun stages than in multi-target or wave-based combat.</p>
+            <p class="concept-text"><strong>EFFECT SYSTEM:</strong> Similarly to modern characters, Uniframes unlock the Effect and its mechanics via Core Skills. Incorporates a unique consumption mechanism that supports the burst and speedrun specialty:</p>
+            <ul class="sys-list">
+                <li>Triggering [a character-specific skill fitting into their rotation, such as Signature Move] instantly consumes all accumulated Effect stacks to deal Effect Burst DMG based on the Effect's current charge level.</li>
+            </ul>
+
+            <!-- EXTRA SUGGESTIONS CONTAINER LAYER -->
+            <div class="extra-suggestions-layer">
+                <div class="extra-tag">// EXTRA OPTIONAL SUGGESTIONS</div>
+
+                <h4 class="sub-heading" style="margin-top: 0;">NEW EFFECT</h4>
+                <p class="concept-text">Introducing a new Effect with its team composition being:</p>
+                <ul class="sys-list">
+                    <li>The consumer (DPS) is always a Vanguard.</li>
+                    <li>The charger and buffer are the Omniframe damage reduction and amplifying classes (Tank / Breaker / Amplifier / Overlinker).</li>
+                    <li>No Attacker unit will have access to this effect.</li>
+                    <li>Vanguard units will still have access to other effects.</li>
+                </ul>
+                <p class="concept-text">The goal is to give Vanguard a guaranteed role, being the Effect’s main consumer at all times.</p>
+
+                <!-- SPECIAL LOOKING BAR / SUB-CARD FOR RUPTURE -->
+                <div class="rupture-effect-bar">
+                    <div class="bar-accent"></div>
+                    <div class="bar-content">
+                        <div class="bar-title">PHYSICAL-SECONDARY EFFECT: RUPTURE</div>
+                        <ul class="sys-list" style="margin-bottom: 0;">
+                            <li><b>Stacking:</b> Maximum of 10 stacks. Every 2 stacks increase Rupture's level by 1.</li>
+                            <li><b>Consumption:</b> Instantly consumes all available Rupture stacks at once, depleting the target's Armor Bar and dealing Effect Burst DMG based on Rupture's level.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="sub-heading" style="margin-top: 25px;">WEAPON HARMONY I</h4>
+                <p class="concept-text" style="margin-bottom: 0;"><span class="highlight">Slight System Changes:</span> When a fully equipped 6-piece Uniframe Memory Set is used for Weapon Harmony, the Memory Set level will further increase.</p>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- META AND TEAM COMPOSITIONS -->
+            <h3 class="data-heading">META AND TEAM COMPOSITIONS</h3>
+            
+            <h4 class="sub-heading">VANGUARD VS ATTACKER</h4>
+            <ul class="sys-list">
+                <li>An S-Rank Attacker outperforms an S-Rank Vanguard of equal rank.</li>
+                <li>A Vanguard outperforms an A-Rank Attacker of equal rank.</li>
+                <li>An SSS-Rank Vanguard outperforms SS- and SS3-Rank Attacker.</li>
+            </ul>
+
+            <h4 class="sub-heading">SINGLE-TARGET COMBAT</h4>
+            <ul class="sys-list">
+                <li>A Vanguard outperforms an S-Rank Attacker of equal rank (up to SSS-Rank).</li>
+                <li>The performance level of an SSS-Rank Vanguard and an SSS-Rank Attacker is close.</li>
+                <li>An SSS+ Rank Vanguard can be weaker than an SSS+ Rank Attacker.</li>
+            </ul>
+
+            <h4 class="sub-heading">RESULTS</h4>
+            <ul class="sys-list">
+                <li>Attacker remains the stronger general-purpose DPS class.</li>
+                <li>Vanguard becomes the second best-in-slot after Attacker, rather than a niche specialist.</li>
+                <li>Vanguard offers the more accessible investment path for F2P and mid-spending players.</li>
+                <li>Attacker remains the stronger option for high investment and maximum general combat performance.</li>
+                <li>In single-target and time-sensitive stages such as Phantom Pain Cage, Vanguard becomes the preferred option.</li>
+                <li>Finisher Gauge stages remain Vanguard's strongest native environment, but Vanguard is no longer dependent on them for its competitive value.</li>
+            </ul>
+
+            <hr class="section-divider" />
+
+            <!-- UNIFRAME PATCH NOTES -->
+            <h3 class="data-heading">UNIFRAME PATCH NOTES</h3>
+            
+            <h4 class="sub-heading">UNIFRAME BANNER</h4>
+            <ul class="sys-list">
+                <li>Introduce exclusive Uniframe Banner R&D Tickets.</li>
+                <li>Release a new modernized Uniframe Vanguard.</li>
+            </ul>
+
+            <h4 class="sub-heading">ENDGAME CONTENT</h4>
+            <ul class="sys-list">
+                <li>Return Operation Uniframe as the primary dedicated Uniframe game mode.</li>
+            </ul>
+
+            <h4 class="sub-heading">INVESTMENT</h4>
+            <ul class="sys-list">
+                <li>Release a new 6-piece Memory Set, alongside a Signature Weapon for the new Uniframe.</li>
+                <li>Make Uniframe Banner R&D Tickets obtainable through Operation Uniframe.</li>
+                <li>Increase the availability of Uniframe investment materials through the Guild Shop and Operation Uniframe rewards.</li>
+            </ul>
+
+        </section>        
+        <a href="home.html" class="back-btn">&lt; RETURN TO DIRECTORY</a>
+
+    </main>
+            <!-- CREDITS BAR -->
+        <section class="credits-bar">
+            <div class="credits-header">CREDITS</div>
+
+            <ul class="credits-list">
+                <li>DISCORD: .badfortuneflower</li>
+                <li>TWITTER: Cradle__00</li>
+            </ul>
+            <br>
+        </section>
+    <!-- FOOTER DIAGNOSTICS -->
+    <footer class="footer-diagnostics">
+        <div class="footer-left">
+        COMMANDANT NAME: Peace Walker
+        </div>
+        <div class="footer-right">
+        COMMANDANT ID: EU-28562109
+        </div>
+    </footer>
+    <script src="bg-switcher.js"></script>
+</body>
+</html>

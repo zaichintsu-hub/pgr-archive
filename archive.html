@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Concepts Archive</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .back-btn {
+            display: inline-block;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 8px 20px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+        .back-btn:hover {
+            border-color: var(--accent-red);
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-layer background-layer-1"></div>
+    <div class="background-layer background-layer-2"></div>
+
+    <!-- TOP NAV BAR -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <span class="brand-logo">PUNISHING</span>
+            <span class="brand-sub">GRAY RAVEN</span>
+        </div>
+        <div class="nav-status">
+            <span class="status-indicator"></span>
+            <span class="status-text">SYSTEM: ONLINE</span>
+        </div>
+    </header>
+
+    <!-- MAIN FULL-WIDTH STICKY HEADER BANNER -->
+    <section class="hero-section">
+        <div class="hud-frame">
+            <div class="hero-banner-inner">
+                <div class="sys-tag">ARCHIVE FILE</div>
+                <h1 class="hero-title">LEGACY CONCEPTS ARCHIVE</h1>
+                <p class="hero-subtitle">TARGETING UNIFRAME SKILLS FOR META RELEVANCE</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-content">
+        
+        <!-- ========================================== -->
+        <!-- CONCEPT 1: CORROSION AFFIX                 -->
+        <!-- ========================================== -->
+        <section class="content-panel">
+            
+            <div class="sys-tag">CONCEPT 01</div>
+            <h2 style="color: var(--accent-red); font-family: monospace; font-size: 1.8rem; margin: 10px 0 25px 0; letter-spacing: 1.5px;">CORROSION AFFIX</h2>
+            
+            <!-- SECTION 1: CONCEPT OVERVIEW -->
+            <h3 class="data-heading">CONCEPT OVERVIEW</h3>
+            <div class="data-block">
+                <p class="concept-text">Rather than a full class rework, this concept suggests reviving Uniframes (Vanguard Class) by linking Uniframe skills to Affixes.</p>
+                <p class="concept-text">By using two already-existing mechanics, this becomes a cost-friendly rework; it’s factual that we will be introduced to more elemental Secondary-Affixes in the future (we got Lighting–Raydiance and Nihil–Disruption already), as for Uniframe skills, the way they function will remain unchanged, they will simply be given new trigger conditions based on the Affix.</p>
+                <p class="concept-text">The Physical Secondary-Affix will be Uniframe-exclusive. Can be unlocked via Core skills for future Uniframes, and via the new 6th Uniframe skill for the seven older Uniframes.</p>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 2: MAIN IDEA - CORROSION AFFIX -->
+            <h3 class="data-heading">MAIN IDEA: CORROSION AFFIX</h3>
+            <div class="data-block">
+                <p class="concept-text">Corrosion is the new Physical-Secondary Affix, exclusive to future Uniframe units and is inaccessible to Omniframe units.</p>
+                <div class="sys-note">
+                    <strong>In-Game Description:</strong> “Generates highly reactive entropic particles to systematically erode the target’s structural integrity. When the accumulated energy reaches a critical state, it overrides the target’s defensive structure, allowing the frame to convert its attacks into powerful corroding damage and exploit the resulting instability.”
+                </div>
+            </div>
+
+            <h4 class="sub-heading">CORROSION AFFIX MECHANICS</h4>
+            <ul class="sys-list">
+                <li><strong>Stacking:</strong> Builds up to a maximum of 20 stacks.</li>
+                <li><strong>Activation:</strong> Overrides the target’s Armor Gauge, converting it into Finisher Gauge.</li>
+                <li><strong>Damage Output:</strong> Corrosion DMG scales with the number of accumulated stacks. Deals primarily Affix DMG, and secondarily Elemental DMG.</li>
+                <li><strong>Restriction:</strong> Finishing Move does not trigger against regular Boss-type enemies who originally do not have Finisher Gauge.</li>
+            </ul>
+
+            <h4 class="sub-heading">STACK CONSUMPTION</h4>
+            <ul class="sys-list">
+                <li>Holding Dodge while dodging incoming attacks consumes 3 stacks to trigger Speed Attack. Can trigger even when Corrosion is inactive, as long as the current stacks ≥ 3.</li>
+                <li>When the target’s Armor Gauge has been fully depleted, consumes 5 stacks to trigger Finishing Move. Only triggers when Corrosion is inactive.</li>
+            </ul>
+
+            <h4 class="sub-heading">DEACTIVATION</h4>
+            <ul class="sys-list">
+                <li><strong>Stacks &lt; 5:</strong> Cannot trigger Finishing Move.</li>
+                <li><strong>Stacks &lt; 3:</strong> Effect deactivates.</li>
+            </ul>
+
+            <h4 class="sub-heading">UNIFRAME 6TH SKILL: ENHANCED AFFIX</h4>
+            <p class="concept-text">Every time Corrosion Stacks are consumed, the Uniframe’s next attack receives +40% Affix DMG Bonus. QTEs from Uniframe allies provide 4 Corrosion Stacks. Deals 10% more damage to Finisher Gauge.</p>
+
+            <h4 class="sub-heading">LEGACY UNIFRAMES</h4>
+            <p class="concept-text">The seven older Uniframe units can receive Enhanced Effect Uniframe skill in later patches, that will unlock Corrosion alongside its mechanics, and the base skill functionality.</p>
+            <p class="concept-text">Who receives this skill and when is up to Kuro to determine.</p>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 3: TEAM COMPOSITIONS & ENDGAME CONTENT -->
+            <h3 class="data-heading">TEAM COMPOSITIONS & ENDGAME CONTENT</h3>
+            
+            <h4 class="sub-heading">TEAM COMPOSITIONS</h4>
+            <ul class="sys-list">
+                <li><strong>ELEMENTAL TEAM:</strong> Vanguard will compete with Attacker for the main DPS slot, alongside Breaker/Tank and Amplifier/Overlinker.</li>
+                <li><strong>CORROSION TEAM:</strong> At least 2 Uniframe units are required to achieve maximum DMG output. A Physical Amplifier can help increase the DMG output, since Corrosion is a Physical Affix. Uniframe’s Enhanced Team skill serves as the second buff provider for the team.</li>
+            </ul>
+
+            <h4 class="sub-heading">ENDGAME CONTENT</h4>
+            <ul class="sys-list">
+                <li><strong>WARZONE (Corrosion Modifier):</strong> “Enemies’ HP stats increases by 35% every wave. All members gain +5% Corrosion DMG every time they trigger Finishing Move”. The stage features tanky enemies that can be defeated by depleting their Armor Gauge and then executing them.</li>
+                <li><strong>OPERATION UNIFRAME:</strong> This mode could get little modifications and return as a main game mode with weekly tasks.</li>
+            </ul>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 4: UNIFRAME PATCH NOTES -->
+            <h3 class="data-heading">UNIFRAME PATCH NOTES</h3>
+            
+            <h4 class="sub-heading">UPDATE UNIFRAME GACHA BANNER</h4>
+            <ul class="sys-list">
+                <li>Introduce exclusive R&D tickets, earned through Operation Uniframe.</li>
+                <li>Increase the pity threshold to 60.</li>
+                <li>A duplicate Uniframe pull grants 30 Inver Shards.</li>
+            </ul>
+
+            <h4 class="sub-heading">FUTURE UNIFRAME UNITS</h4>
+            <ul class="sys-list">
+                <li>Apply Time Lag Calculation to Signature Moves and Finishing Moves.</li>
+                <li>Grant them Corrosion DMG buffs via their 6-piece memory sets.</li>
+                <li>Grant them CUBs.</li>
+            </ul>
+
+            <h4 class="sub-heading">INVESTMENT</h4>
+            <ul class="sys-list">
+                <li>Increase the availability of Uniframe investment materials through the Guild Shop and Operation Uniframe rewards.</li>
+            </ul>
+
+        </section>
+        <!-- ========================================== -->
+        <!-- CONCEPT 2: RAIDER CLASS                 -->
+        <!-- ========================================== -->
+        <section class="content-panel" style="margin-top: 40px;">
+            
+            <div class="sys-tag">CONCEPT 02</div>
+            <h2 style="color: var(--accent-red); font-family: monospace; font-size: 1.8rem; margin: 10px 0 25px 0; letter-spacing: 1.5px;">RAIDER CLASS</h2>
+            
+            <!-- SECTION 1: CONCEPT OVERVIEW -->
+            <h3 class="data-heading">CONCEPT OVERVIEW</h3>
+            <div class="data-block">
+                <p class="concept-text">This concept revolves around “How Uniframes can regain their competitiveness, without making any modifications to Vanguard class or already-existing mechanics?”</p>
+                <p class="concept-text">My proposal is to introduce a new class that enables Uniframes and supports Vanguards.</p>
+                <p class="concept-text"><strong>Main Idea: Raider Class</strong></p>
+                <div class="sys-note">
+                    <strong>In-Game Description:</strong> “Focused on disruption, can manipulate enemy behavior and override their defenses while strengthening allies.”
+                </div>
+                <p class="concept-text">Raider is a new Uniframe class, whose roles are divided into a general role and a Uniframe specialization.</p>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 2: CLASS MECHANICS & SKILLS -->
+            <h3 class="data-heading">CLASS MECHANICS & SKILLS</h3>
+            
+            <h4 class="sub-heading">CLASS SKILL (MAX LEVEL)</h4>
+            <p class="concept-text">Raider QTEs grants 1 <b style="color: var(--accent-red);">Shatter</b> that increases the Extra DMG Bonus by 5% and the Raider's Elemental DMG Bonus by 5% to self and allies, up to a maximum of 4 stacks. When Raider enters the battlefield, grants 1 <b style="color: var(--accent-red);">Shatter</b>. On exit, consumes all available <b style="color: var(--accent-red);">Shatter</b> to deal 500% / 1000% / 1500% / 2000% Elemental DMG of the Raider element.</p>
+
+            <h4 class="sub-heading">UNIFRAME SPECIALIZATION</h4>
+            <p class="concept-text">QTEs from a Raider unit mark the target nearest to the QTE Area of Effect as [Executable]. Does not apply to Boss-type enemies.<br>
+                <strong>[Executable]:</strong> Finishing Move can trigger against an Executable target.<br>
+                <span class="highlight">Note:</span> Applies to only one enemy per QTE trigger.</p>
+
+            <h4 class="sub-heading">UNIFRAME SKILLS</h4>
+            <p class="concept-text">Raider units retain standard Uniframe Skill mechanics, with specific enhancements applied to:</p>
+            <ul class="sys-list">
+                <li><strong>Enhanced Speed Attack:</strong> In addition to dealing elemental Burst DMG, marks the target who performed the All-out Attack as [Executable].</li>
+                <li><strong>Enhanced Team:</strong> When any Uniframe in the team uses Finishing Move, grants the maximum number of Shatter stacks and increase the Radier Skill effect by 50% for 15s.</li>
+            </ul>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 3: ANALYSIS: TEAM COMPOSITIONS -->
+            <h3 class="data-heading">ANALYSIS: TEAM COMPOSITIONS</h3>
+            
+            <h4 class="sub-heading">ELEMENTAL & EFFECT COMPOSITION</h4>
+            <div class="sys-note" style="margin-bottom: 15px;">
+                <strong>Team Layout:</strong> [ATTACKER/VANGUARD - BREAKER/TANK - AMPLIFIER/RAIDER]
+            </div>
+            
+            <p class="concept-text" style="margin-bottom: 5px;"><strong>DPS Comparison:</strong></p>
+            <ul class="sys-list">
+                <li>Vanguard technically functions like an Attacker for 10 seconds upon deployment.</li>
+                <li>Uniframe 6-piece memory sets provide higher DMG stats than Omniframe 4-piece memory sets.</li>
+                <li>Omniframe has the advantage of being able to equip 2 complete memory sets thanks to Weapon Harmony.</li>
+                <li>Some Omniframe memory sets like Cottie provide the advantage of a faster rotation.</li>
+            </ul>
+
+            <p class="concept-text" style="margin-bottom: 5px;"><strong>SUPPORT Comparison:</strong></p>
+            <ul class="sys-list">
+                <li>Amplifier instantly provides 20% Extra DMG Bonus for 10 seconds when a character is deployed, while Raider builds up stacks through QTEs, with the maximum Extra DMG Bonus being 20%.</li>
+                <li>Amplifier heals allies, increases their DMG, and provides more buffs via support Omniframe memory sets like Da Vinci and Guinevere.</li>
+                <li>Raider deals AoE Burst DMG on exit.</li>
+                <li>[Executable] opens a window for Uniframes to partly benefit from Uniframe skills’ Finishing Move and Enhanced Team’s stats buff.</li>
+            </ul>
+
+            <p class="concept-text"><strong>Conclusion:</strong> Vanguard and Attacker, Raider and Amplifier, can share the same slot, depending on which unit is stronger.</p>
+
+            <h4 class="sub-heading">UNIFRAME COMPOSITION</h4>
+            <div class="sys-note" style="margin-bottom: 15px;">
+                <strong>Team Layout:</strong> [VANGUARD - VANGUARD - RAIDER]
+            </div>
+            <ul class="sys-list">
+                <li>Outside of dedicated Uniframe stages, this composition is less effective than standard competitive Omniframe teams.</li>
+                <li>Gains stats buff and support from Raider's Class skill and Uniframes’ Enhanced Team.</li>
+                <li>Specializes against enemies with Finisher Gauge and enemies whose HP and shield stats are high.</li>
+                <li>Omniframe units are highly irrelevant to this team.</li>
+            </ul>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 4: UNIFRAME PATCH NOTES -->
+            <h3 class="data-heading">UNIFRAME PATCH NOTES</h3>
+            
+            <h4 class="sub-heading">COMBAT STAGES</h4>
+            <ul class="sys-list">
+                <li>Add more Uniframe end-game content, Operation Uniframe may return as a main Uniframe game mode.</li>
+                <li>Uniframe combat stages feature enemies with high HP and Finisher Gauge stats.</li>
+            </ul>
+
+            <h4 class="sub-heading">UNIFRAME GACHA BANNER</h4>
+            <ul class="sys-list">
+                <li>Release a new Uniframe Raider.</li>
+                <li>Introduce exclusive Uniframe Banner R&D Tickets earned through Operation Uniframe.</li>
+                <li>Increase the pity threshold to 60.</li>
+                <li>A duplicate Uniframe copy grants 30.</li>
+            </ul>
+
+            <h4 class="sub-heading">FUTURE UNIFRAME UNITS</h4>
+            <ul class="sys-list">
+                <li>Apply Time Lag Calculation to Signature Moves and Finishing Moves.</li>
+                <li>Grant them CUBs.</li>
+            </ul>
+
+            <h4 class="sub-heading">INVESTMENT</h4>
+            <ul class="sys-list">
+                <li>Increase the availability of Uniframe investment materials through the Guild Shop and Operation Uniframe rewards.</li>
+            </ul>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- CONCEPT 3: NEW UNIFRAME MEMORY SET         -->
+        <!-- ========================================== -->
+        <section class="content-panel" style="margin-top: 40px;">
+            
+            <div class="sys-tag">CONCEPT 03</div>
+            <h2 style="color: var(--accent-red); font-family: monospace; font-size: 1.8rem; margin: 10px 0 25px 0; letter-spacing: 1.5px;">NEW UNIFRAME MEMORY SET CATEGORY</h2>
+            
+            <!-- SECTION 1: CONCEPT OVERVIEW -->
+            <h3 class="data-heading">CONCEPT OVERVIEW</h3>
+            <div class="data-block">
+                <p class="concept-text">I call it the Capsule Concept; it suggests reviving Uniframes simply by introducing a single new category of Memory Sets. This concept introduces a new category of Uniframe Memory Set in addition to their standard 6-piece sets.</p>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 2: SPECIFICATIONS -->
+            <h3 class="data-heading">SPECIFICATIONS</h3>
+            <ul class="sys-list">
+                <li>A complete set consists of 2 pieces.</li>
+                <li>Exclusive to Uniframes, with a single universal set and character-specialized sets (for future Uniframe units).</li>
+                <li>The Memory Set skill enables Uniframe Skills’ mechanics outside of dedicated Uniframe stages.</li>
+            </ul>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 3: FUNCTIONALITY -->
+            <h3 class="data-heading">FUNCTIONALITY</h3>
+            
+            <h4 class="sub-heading">UNIVERSAL SET</h4>
+            <p class="concept-text">Triggering a 3-orb ping grants [Shatter]. The next attack consumes [Shatter] to deal 500% Elemental AoE DMG, and apply 1 stack of [Executable] on up to 3 targets. When a target is inflicted with 3 [Executable] stacks, Finishing Move can trigger against this target, with a 5 seconds countdown.</p>
+
+            <h4 class="sub-heading">CHARACTER-SPECIALIZED SET</h4>
+            <p class="concept-text">It functions the same as the universal set, with the only difference being the trigger condition for granting [Shatter], which adapts directly to the character’s unique kit.</p>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 4: NOTES -->
+            <h3 class="data-heading">NOTES</h3>
+            <ul class="sys-list">
+                <li><strong>Restriction:</strong> Equipping one 2-piece Uniframe Memory Set locks out others; a Uniframe cannot equip multiple sets of this category simultaneously.</li>
+                <li><strong>Finisher Gauge enemies:</strong> Cannot be excuted via [Executable] in the presence of Finisher Gauge.</li>
+                <li><strong>Finishing Moves:</strong> Unusable against standard Boss-type enemies (excluding Uniframe Bosses like MC Solar).</li>
+                <li><strong>[Executable]:</strong> Opens a window for Uniframes to utilize Uniframe Skills against normal and elite enemies lacking the Finisher Gauge.</li>
+                <li><strong>Skill Inheritance:</strong> If an enemy dies without being executed, another enemy inherits [Executable]. If the enemy is executed or the 5-seconds countdown expires, [Executable] expires.</li>
+            </ul>
+
+            <div class="sys-note" style="margin-top: 15px;">
+                <strong>Mechanic Advantage Note:</strong> This concept makes Weapon Harmony an essential build attribute for Uniframes, as a player can now use a 6-piece memory set, and fill the 2-piece memory slot provided by Weapon Harmony with the new memory set category, making it preferable to pull 6★ Signature weapons.
+            </div>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- CONCEPT 4: MODERN UNIFRAME APPROACH        -->
+        <!-- ========================================== -->
+        <section class="content-panel" style="margin-top: 40px;">
+            
+            <div class="sys-tag">CONCEPT 04</div>
+            <h2 style="color: var(--accent-red); font-family: monospace; font-size: 1.8rem; margin: 10px 0 25px 0; letter-spacing: 1.5px;">MODERN UNIFRAME APPROACH</h2>
+            
+            <!-- SECTION 1: CONCEPT OVERVIEW -->
+            <h3 class="data-heading">CONCEPT OVERVIEW</h3>
+            <div class="data-block">
+                <p class="concept-text">This concept preserves the original identity of Uniframes as Burst and Execution units. It builds upon the developers' original direction by introducing a streamlined approach for future Uniframe characters, alongside a 6th Uniframe Skill through which older units can regain competitive viability. So, rather than reworking, modifying, or introducing new mechanics, it simply makes Uniframes more Uniframes. <strong>This approach applies to future Uniframe units only.</strong></p>
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 2: UNIFRAME SKILLS -->
+            <h3 class="data-heading">UNIFRAME SKILLS</h3>
+            
+            <h4 class="sub-heading">SPEED ATTACK</h4>
+            <p class="concept-text">In addition to the original skill: A Perfect Parry triggers a 1s Quick Time Event (indicated by a flashing Dodge button), during which holding Dodge consumes 50% dodge gauge to trigger Speed Attack.</p>
+            <p class="concept-text"><span class="highlight">Recommendation:</span> Apply Time Lag Calculation to Speed Attack.</p>
+
+            <h4 class="sub-heading">FINISHING MOVE</h4>
+            <p class="concept-text">In addition to the baseline functionality, I suggest giving it a special trigger condition that <b>triggers only against regular enemies and does not trigger against enemies with Finisher Gauge</b>, fitting into the character’s kit and rotation + an execution threshold.</p>
+            <p class="concept-text">Apply Time Lag Calculation to Finishing Move.</p>
+            <p class="concept-text">Enhanced Speed Attack and Enhanced Finishing Move retain their original functionality.</p>
+
+            <h4 class="sub-heading">ENHANCED TEAM</h4>
+            <p class="concept-text">After any Uniframe in the team uses Finishing Move, Increases [the controlled character’s element] DMG of all Uniframes in the team by 10% for 15s, and either:</p>
+            <ul class="sys-list">
+                <li>Refreshes Vanguard Class Skill duration and increase its effect by 50%.</li>
+                <li>Restores 20% of max HP to self and allies and increase the next Uniframe’s ATK by 10% for 15s.</li>
+                <li>Reduces Finisher Gauge effectiveness by 20% for all enemies within range for 15s.</li>
+            </ul>
+            <p class="concept-text"><em>A new Uniframe unit simply gets one of these skills. The goal is to create multi-role slots in the Uniframe Team Comps.</em></p>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 3: NEW SKILL PROGRESSION -->
+            <h3 class="data-heading">NEW SKILL PROGRESSION</h3>
+
+            <h4 class="sub-heading">UNIFRAME 6TH SKILL</h4>
+            <p class="concept-text">When [the character’s effect] is active, 100% of the elemental DMG dealt by Uniframe skills shifts to Effect DMG, + [A character-specific skill for Kuro to determine].</p>
+
+            <h4 class="sub-heading">CORE SKILL (CHARACTER-SPECIFIC)</h4>
+                <p Class="concept-text">Unlocks the character’s effect and its mechanics by default.<br>
+                Vanguard units possess a specialized method of interacting with effects that directly aligns with their Burst role.</p>
+            <ul class="sys-list">
+                <li>Vanguards are slow at charging the effect.</li>
+                <li>Triggering a Signature Move while the effect is active consumes all accumulated stacks to deal Effect Burst DMG, scaling proportionally with the effect's current charge level.</li>
+            </ul>
+
+            <h4 class="sub-heading">6★ SIGNATURE WEAPON</h4>
+            <p class="concept-text">For future Uniframes, 6★ Signature Weapons will get special skills via Harmony Awakening, making it more preferable for players to pull for them.</p>
+            <p class="concept-text"><span class="highlight">Suggestion:</span> If the 6-Piece Memory set is already fully equipped, using the same set to harmonize will further increase the Memory set level.</p>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 4: OLDER UNIFRAMES -->
+            <h3 class="data-heading">OLDER UNIFRAMES</h3>
+            <p class="concept-text">No modifications will be made to their base Uniframe skills; they will retain their original kit design. Every patch or two, one of these units will receive the 6th Uniframe Skill, which will function as follows (referenced from Leap Skills):</p>
+            <ul class="sys-list">
+                <li>Unlocks an effect for the character, alongside its mechanics (charge conditions, damage parameters, and Burst triggers) plus the base 6th Skill functionality described above.</li>
+            </ul>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 5: NOTES AND ANALYSIS -->
+            <h3 class="data-heading">NOTES AND ANALYSIS</h3>
+            <ul class="sys-list">
+                <li><strong>Finishing Move:</strong> Can’t be triggered against a standard Boss-type enemy lacking the Finisher Gauge.</li>
+                <li><strong>New Enhanced Team:</strong> Defines the specializations within a Uniframe team composition. The base skill, combined with one of three varying role skills, establishes three distinct specializations: Primary DPS, Sustainer and Disrupter.</li>
+                <li><strong>Effect Burst:</strong> Combines the original Burst identity of Uniframes with effects, introducing a new unique role for effect team composition: </li>
+                    <ul class="sys-list">
+                        <li><strong>Burst:</strong> Uses Vanguard as the main effect consumer to instantly deal effect burst DMG and complete the stage faster. Recommended for PPC.</li>
+                        <li><strong>DoT:</strong> Uses the main Omniframe DPS to deal effect DMG over time, being the best at dealing with multi-wave stages within the stage time. Recommended for WZ.</li>
+                    </ul>
+                <li><strong>The 7 Legacy Uniframes:</strong> The 6th Uniframe Skill revives them, rewarding them with the Effect Burst identity, making them competitive units in both PPC effect stages as of the modern PGR era, and Uniframe-dedicated stages. Choosing who gets the 6th Uniframe Skill and when is up to Kuro.</li>
+                <li><strong>Perfect Parry:</strong> Triggered by parrying an enemy at a perfect moment in time. Can be triggered against all types of enemies.</li>
+                <li><strong>Original Speed Attack & Finishing Move:</strong> Just pointing out that the original functionality is included within the new approach; Speed Attacks are triggered when dodging the target's All-out Attack by holding Dodge, Finishing Moves are triggered when the target has an empty Finisher Gauge. The new approach is simply added to the original functionality.</li>
+            </ul>
+
+            <hr class="section-divider" />
+
+            <!-- SECTION 6: UNIFRAME PATCH NOTES -->
+            <h3 class="data-heading">UNIFRAME PATCH NOTES</h3>
+            <ul class="sys-list">
+                <li><strong>New Uniframe:</strong></li>
+                    <ul class="sys-list">
+                        <li>Add a new S-rank Uniframe obtained via Uniframe Banner.</li>
+                        <li>Apply the modern S-rank character features (TLC, Effect).</li>
+                        <li>Grant the new unit an S-rank CUB, a 6★ Signature Weapon, and a special 6-Piece Memory Set.</li>
+                        <li>Apply the new skill approach and 6★ Signature Weapon approach to them.</li>
+                    </ul>
+                <li><strong>Combat Stages:</strong></li>
+                <ul class="sys-list">
+                    <li>Add more Uniframe end-game content. Operation Uniframe may return as a main Uniframe game mode with few modifications.<br>Uniframe dedicated stages feature enemies with high HP and Finisher Gauge stats, and elemental/effect weakness.</li>
+                </ul>
+                <li><strong>Uniframe Gacha Banner:</strong></li>
+                <ul class="sys-list">
+                    <li>Introduce new exclusive Uniframe Banner R&D Tickets earned through Operation Uniframe.</li>
+                    <li>Increase the pity threshold.</li>
+                    <li>A duplicate Uniframe copy grants 30 shards.</li>
+                </ul>
+                <li><strong>Event Rewards:</strong> Include a number of Uniframe S-Rank Selectors, up to Noan: Arca, and Uniframe 6★ Signature Weapon Selectors, up to Prometheus.</li>
+                <li><strong>Older Uniframes:</strong> Grant an older unit the 6th Uniframe Skill.</li>
+                <li><strong>Investment:</strong> Increase the availability of Uniframe investment materials through the Guild Shop and Operation Uniframe rewards.</li>
+            </ul>
+
+        </section>
+        <a href="home.html" class="back-btn">&lt; RETURN TO DIRECTORY</a>
+    </main>
+            <!-- CREDITS BAR -->
+        <section class="credits-bar">
+            <div class="credits-header">CREDITS</div>
+
+            <ul class="credits-list">
+                <li>DISCORD: .badfortuneflower</li>
+                <li>TWITTER: Cradle__00</li>
+            </ul>
+            <br>
+        </section>
+    <!-- FOOTER DIAGNOSTICS -->
+    <footer class="footer-diagnostics">
+        <div class="footer-left">
+        COMMANDANT NAME: Peace Walker
+        </div>
+        <div class="footer-right">
+        COMMANDANT ID: EU-28562109
+        </div>
+    </footer>
+
+    <script src="bg-switcher.js"></script>
+</body>
+</html>
