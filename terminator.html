@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Terminator Class</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .back-btn {
+            display: inline-block;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 8px 20px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            transition: all 0.2s ease;
+        }
+        .back-btn:hover {
+            border-color: var(--accent-red);
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-layer background-layer-1"></div>
+    <div class="background-layer background-layer-2"></div>
+
+    <!-- TOP NAV BAR -->
+    <header class="top-nav">
+        <div class="nav-brand">
+            <span class="brand-logo">PUNISHING</span>
+            <span class="brand-sub">GRAY RAVEN</span>
+        </div>
+        <div class="nav-status">
+            <span class="status-indicator"></span>
+            <span class="status-text">SYSTEM: ONLINE</span>
+        </div>
+    </header>
+
+    <!-- MAIN FULL-WIDTH STICKY HEADER BANNER -->
+    <section class="hero-section">
+        <div class="hud-frame">
+            <div class="hero-banner-inner">
+                <div class="sys-tag">CONCEPT FILE</div>
+                <h1 class="hero-title">TERMINATOR CLASS</h1>
+                <p class="hero-subtitle">NEW UNIFRAME CLASS & MECHANICS OVERVIEW</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="main-content">
+
+        <!-- SINGLE CONCEPT BODY PANEL -->
+        <section class="content-panel">
+            
+            <!-- CONCEPT OVERVIEW -->
+            <h3 class="data-heading">CONCEPT OVERVIEW</h3>
+            <div class="data-block">
+                <p class="concept-text">This concept introduces a new Uniframe class featuring a Class Skill and core kit designed to expand and sharpen the identity of Uniframe Skills.</p>
+                
+                <h4 class="sub-heading">CLASS SPECIFICATIONS</h4>
+                <p class="concept-text">Just as Uniframe Skills emphasize burst output and Max HP-scaling damage, the Terminator's Core skills, Evolution skills, and Class Skill are built entirely around these two damage types. Additionally, essential skills like the Signature Move will feature Time Lag Calculation (TLC).</p>
+                
+                <div class="sys-note">
+                    <strong>In-game Description:</strong> Focuses on overcoming, can deal sever damage to enemies with high durability.
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- CLASS SKILL -->
+            <h3 class="data-heading">CLASS SKILL</h3>
+            <div class="data-block">
+                <p class="concept-text">Since I do not have access to the exact enemy HP values used in development, the scaling below is provided as a conceptual baseline:<br>
+                    <strong>Every 2&times; increase in the target's Max HP relative to the character's Max HP grants +5% Extra DMG Bonus, up to +40%.</strong></p>
+                
+                <p class="concept-text"><strong>Demonstration:</strong> When an enemy has Max HP equal to 100% &times; 2<sup>n</sup> of the character’s Max HP, the character gains a +5% Extra DMG Bonus proportional to the value of n, capping at 40%. Mathematically, it follows:</p>
+                
+                <ul class="sys-list">
+                    <li>Enemy Max HP = 100% &times; 2<sup>1</sup> = 200% Character Max HP &rarr; +5% Extra DMG Bonus</li>
+                    <li>100% &times; 2<sup>2</sup> = 400% &rarr; +10%</li>
+                    <li>100% &times; 2<sup>3</sup> = 800% &rarr; +15%</li>
+                    <li>100% &times; 2<sup>4</sup> = 1,600% &rarr; +20%</li>
+                    <li>100% &times; 2<sup>5</sup> = 3,200% &rarr; +25%</li>
+                    <li>100% &times; 2<sup>6</sup> = 6,400% &rarr; +30%</li>
+                    <li>100% &times; 2<sup>7</sup> = 12,800% &rarr; +35%</li>
+                    <li>100% &times; 2<sup>8</sup> = 25,600% &rarr; +40% (MAX)</li>
+                </ul>
+                
+                <div class="sys-note">
+                    <strong>Note:</strong> When facing multiple enemies, the Class Skill scales based on the target with the highest Max HP.
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- UNIFRAME SKILLS -->
+            <h3 class="data-heading">UNIFRAME SKILLS</h3>
+            <div class="data-block">
+                <p class="concept-text">These mechanics are designed to support the character in multi-target mob encounters where enemy Max HP is relatively low, compensating for the resulting drop in the Class Skill's Extra DMG Bonus.</p>
+
+                <div class="rupture-effect-bar">
+                    <div class="bar-accent"></div>
+                    <div class="bar-content">
+                        <div class="bar-title">SKILL ADJUSTMENTS</div>
+                        
+                        <h4 class="sub-heading">SPEED ATTACK</h4>
+                        <p class="concept-text">Upon triggering Matrix, holding Dodge will trigger Speed Attack and deplete a percentage of the Dodge Gauge.<br>
+                            This shift makes Speed Attacks a proactive part of the character's core rotation rather than a purely reactive tool.</p>
+
+                        <h4 class="sub-heading">FINISHING MOVE</h4>
+                        <p class="concept-text">The trigger condition will be based on a Uniframe mechanic: the [Executable] status.</p>
+                        <p class="concept-text"><strong>[Executable]:</strong> Finishing Move can trigger against an Executable target under certain conditions.</p>
+                        
+                        <p class="concept-text">Two suggested trigger methods for this mechanic:</p>
+                        <ul class="sys-list">
+                            <li><span class="highlight">Recommended:</span> When 4 or more enemies are present, applies [Executable] to up to 4 targets, with a X seconds cooldown. When an [Executable] target falls below 30% HP, the character triggers Finishing Move.</li>
+                            <li>Defeating enemies grants stacks that expire after 10s. Accumulating 5 stacks enables [Executable] for X seconds.</li>
+                        </ul>
+                        
+                        <p class="concept-text">Applying Time Lag Calculation to Finishing Move should be considered and evaluated by the developers.</p>
+                        
+                        <p class="concept-text"><span class="highlight">Extra Suggestion:</span> If TLC will not apply to Finishing Move, players must have the freedom to manually trigger the move to prevent rotation disruption. Suggested manual inputs include:</p>
+                        <ul class="sys-list">
+                            <li>Basic Attack.</li>
+                            <li>Hold Dodge, then tap Basic Attack.</li>
+                            <li>Hold the CUB button.</li>
+                        </ul>
+                        <p class="concept-text">Toggleable through Finishing Move skill settings.</p>
+
+                        <h4 class="sub-heading">ENHANCED TEAM</h4>
+                        <p class="concept-text">Increases the Terminator Class Skill effect.</p>
+
+                        <h4 class="sub-heading">ENHANCED SPEED ATTACK & ENHANCED FINISHING MOVE</h4>
+                        <p class="concept-text">Retain their original kit design.</p>
+                    </div>
+                </div>
+                
+                <p class="concept-text">With these adjustments, the Finisher Gauge is no longer the sole requirement to activate Uniframe Skills. Enemies with a Finisher Gauge effectively become the Uniframe's secondary specialization.</p>
+                
+                <div class="sys-note">
+                    <strong>Note:</strong> The baseline mechanics for Speed Attacks, Finishing Moves, and the Finisher Gauge depletion remain intact; these new conditions simply act as additional triggers.
+                </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- AFFIX IDENTITY -->
+            <h3 class="data-heading">AFFIX IDENTITY</h3>
+            <div class="data-block">
+                <p class="concept-text">There are 2 directions concerning this mechanic:</p>
+                <ul class="sys-list">
+                    <li><strong><span class="highlight">Recommended:</span> Affix Burst:</strong> Uses instant burst for stack consumption, rather than DoT &ndash; Triggering [a character-specific skill fitting into their rotation, such as Signature Move] instantly consumes all accumulated Affix stacks to deal Affix Burst DMG based on the Affix&rsquo;s current charge level.</li>
+                    <li><strong>Exclusive Affix:</strong> Utilize one of the four empty Secondary-Affix slots to introduce a new Affix exclusive to Uniframes and completely inaccessible to Omniframes.</li>
+                </ul>
+            </div>
+
+            <hr class="section-divider" />
+
+            <!-- GAME MODES & BANNER SPECIFICATIONS -->
+            <h3 class="data-heading">GAME MODES & BANNER SPECIFICATIONS</h3>
+            
+            <h4 class="sub-heading">UNIFRAME BANNER REDESIGN</h4>
+            <div class="data-block">
+                <ul class="sys-list">
+                    <li>100% guarantee for a Vanguard at 10 pulls.</li>
+                    <li>100% guarantee for a Terminator at 40 pulls (the exact pity value is up to Kuro).</li>
+                    <li>Introduce exclusive Uniframe Banner R&D Tickets.</li>
+                    <li>Terminator duplicates grant 30 Inver Shards.</li>
+                    <li>Terminators do not gain a dedicated CUB.</li>
+                </ul>
+            </div>
+
+            <h4 class="sub-heading">GAME MODES</h4>
+            <div class="data-block">
+                <ul class="sys-list">
+                    <li>Bring back Operation Uniframe with minor adjustments, focusing on enemies with Finisher Gauges and offering exclusive Uniframe Banner R&D Tickets as a part of the weekly rewards.</li>
+                    <li>Introduce a new game mode featuring enemies and bosses with massive HP pools, in addition to varied difficulty tiers, ranking, tasks and rewards. Whether this mode is weekly or seasonal is up to Kuro.</li>
+                </ul>
+            </div>
+
+        </section>
+            
+        <a href="index.html" class="back-btn">&lt; RETURN TO DIRECTORY</a>
+
+    </main>
+    
+    <!-- CREDITS BAR -->
+    <section class="credits-bar">
+        <div class="credits-header">CREDITS</div>
+        <ul class="credits-list">
+            <li>DISCORD: .badfortuneflower</li>
+            <li>TWITTER: Cradle__00</li>
+        </ul>
+        <br>
+    </section>
+
+    <!-- FOOTER DIAGNOSTICS -->
+    <footer class="footer-diagnostics">
+        <div class="footer-left">
+            COMMANDANT NAME: Peace Walker
+        </div>
+        <div class="footer-right">
+            COMMANDANT ID: EU-28562109
+        </div>
+    </footer>
+    <script src="bg-switcher.js"></script>
+</body>
+</html>
