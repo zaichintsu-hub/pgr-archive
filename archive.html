@@ -106,7 +106,7 @@
             <h4 class="sub-heading">CORROSION AFFIX MECHANICS</h4>
             <ul class="sys-list">
                 <li><strong>Stacking:</strong> Builds up to a maximum of 20 stacks.</li>
-                <li><strong>Activation:</strong> Overrides the target’s Armor Gauge, converting it into Finisher Gauge.<br><i>(Determing a well-structured Execution-trigger condition is up to Kuro, as I believe there are many other implementable options than Finisher Gauge conversion.)</i></li>
+                <li><strong>Activation:</strong> Applies [Executable] status to attacked enemies. When an Executable target falls below 25% HP, the character triggers Finishing Move on them.</li>
                 <li><strong>Damage Output:</strong> Corrosion DMG scales with the number of accumulated stacks. Deals primarily Affix DMG, and secondarily Elemental DMG.</li>
                 <li><strong>Restriction:</strong> Finishing Move does not trigger against regular Boss-type enemies who originally do not have Finisher Gauge.</li>
             </ul>
@@ -145,11 +145,10 @@
             
             <!-- SECTION 4: UNIFRAME PATCH NOTES -->
             <h3 class="data-heading">UNIFRAME PATCH NOTES</h3>
-            <p class='concept-text'><i>Granting Uniframes the premium S-Rank investment approach (guarantee on 60 pulls, 30 Inver Shards on duplicates, dedicated character CUB) is optional and is something for Kuro to determine.</i></p>
             <h4 class="sub-heading">UPDATE UNIFRAME GACHA BANNER</h4>
             <ul class="sys-list">
                 <li>Introduce exclusive R&D tickets, earned through Operation Uniframe.</li>
-                <li>Increase the pity threshold to 60.</li>
+                <li>Increase the pity threshold to 40.</li>
                 <li>A duplicate Uniframe pull grants 30 Inver Shards.</li>
             </ul>
 
@@ -157,7 +156,6 @@
             <ul class="sys-list">
                 <li>Apply Time Lag Calculation to Signature Moves and Finishing Moves.</li>
                 <li>Grant them Corrosion DMG buffs via their 6-piece memory sets.</li>
-                <li>Grant them CUBs.</li>
             </ul>
 
             <h4 class="sub-heading">INVESTMENT</h4>
@@ -196,7 +194,7 @@
             <p class="concept-text">Raider QTEs grants 1 <b style="color: var(--accent-red);">Shatter</b> that increases the Extra DMG Bonus by 5% and the Raider's Elemental DMG Bonus by 5% to self and allies, up to a maximum of 4 stacks. When Raider enters the battlefield, grants 1 <b style="color: var(--accent-red);">Shatter</b>. On exit, consumes all available <b style="color: var(--accent-red);">Shatter</b> to deal 500% / 1000% / 1500% / 2000% Elemental DMG of the Raider's element.</p>
 
             <h4 class="sub-heading">UNIFRAME SPECIALIZATION</h4>
-            <p class="concept-text">QTEs from a Raider unit mark the target nearest to the QTE Area of Effect as [Executable]. Does not apply to Boss-type enemies.<br>
+            <p class="concept-text">QTEs from a Raider unit mark the target nearest to the QTE Area of Effect as [Executable]. Boss-type enemies and enemies with Finisher Gauge resist [Executable].<br>
                 <strong>[Executable]:</strong> Finishing Move can trigger against an Executable target.<br>
                 <span class="highlight">Note:</span> Applies to only one enemy per QTE trigger.</p>
 
