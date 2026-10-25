@@ -621,3 +621,92 @@ body {
 .credits-list li::marker {
     color: var(--accent-red);
 }
+
+
+
+/* =========================================
+   STRUCTURE PAGE — MEDIA COMPONENTS
+   ========================================= */
+
+/* --- SINGLE IMAGE --- */
+.concept-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 20px auto;
+    border: 1px solid var(--border-color);
+    object-fit: contain;
+}
+
+/* --- HORIZONTAL IMAGE GALLERY --- */
+.concept-gallery {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px 0 15px;
+    margin: 20px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-red) #0B0C10;
+}
+
+.concept-gallery img {
+    display: block;
+    flex: 0 0 85%;
+    width: 85%;
+    max-width: 900px;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    scroll-snap-align: start;
+}
+
+/* --- RESPONSIVE YOUTUBE VIDEO --- */
+.concept-video {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    border: 1px solid var(--border-color);
+    background: #0B0C10;
+}
+
+.concept-video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- MOBILE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .concept-image {
+        margin: 15px auto;
+    }
+
+    .concept-gallery img {
+        flex-basis: 95%;
+        width: 95%;
+        max-height: 450px;
+    }
+
+    .concept-video {
+        margin: 15px auto;
+    }
+}
+
+/* --- INLINE CONCEPT ICONS --- */
+.concept-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 0 6px;
+}
