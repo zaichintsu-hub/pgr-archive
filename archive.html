@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Uniframe Skills Focused</title>
-<meta name="title" content="Uniframe Skills Focused">
+<meta name="title" content="Legacy Concepts Archive">
 <meta name="description" content="A fan concepts archive dedicated to Punishing: Gray Raven Uniframe combat concepts, class mechanics, and structural proposals.">
 <meta name="keywords" content="PGR, Punishing Gray Raven,
     Uniframe, Uniframe Concepts, PGR Archive, Uniframe Rework, Uniframe Revival, Uniframe Plans, PGR Uniframe, Punishing Gray Raven Uniframe,
@@ -83,21 +83,22 @@
         <section class="content-panel">
             
             <div class="sys-tag">CONCEPT 01</div>
-            <h2 style="color: var(--accent-red); font-family: monospace; font-size: 1.8rem; margin: 10px 0 25px 0; letter-spacing: 1.5px;">CORROSION AFFIX</h2>
+            <h2 style="color: var(--accent-red); font-family: monospace; font-size: 1.8rem; margin: 10px 0 25px 0; letter-spacing: 1.5px;">RUPTURE AFFIX</h2>
             
             <!-- SECTION 1: CONCEPT OVERVIEW -->
             <h3 class="data-heading">CONCEPT OVERVIEW</h3>
             <div class="data-block">
-                <p class="concept-text">Rather than a full class rework, this concept suggests reviving Uniframes (Vanguard Class) by linking Uniframe skills to Affixes.<br>
-                The Physical Secondary-Affix will be Uniframe-exclusive. Can be unlocked via Core skills for future Uniframes.<br>Note that the proposed Affix will not apply to the 7 existing uniframes.</p>
+                <p class="concept-text">This concept introduces a new Affix based on which Uniframe mechanics can operate.<br>
+                The Physical Secondary-Affix will be Uniframe-exclusive. Can be unlocked via Core skills for future Uniframes.<br>
+                <i>Note that the proposed Affix will not apply to the 7 existing uniframes.</i></p>
             </div>
 
             <hr class="section-divider" />
 
             <!-- SECTION 2: MAIN IDEA - CORROSION AFFIX -->
-            <h3 class="data-heading">MAIN IDEA: CORROSION AFFIX</h3>
+            <h3 class="data-heading">MAIN IDEA: RUPTURE AFFIX</h3>
             <div class="data-block">
-                <p class="concept-text">Corrosion is the new Physical-Secondary Affix, exclusive to future Uniframe units and is inaccessible to Omniframe units.</p>
+                <p class="concept-text">Rupture is the new Physical-Secondary Affix, exclusive to future Uniframe units and is inaccessible to Omniframe units.</p>
                 <div class="sys-note">
                     <strong>In-Game Description:</strong> “Generates highly reactive entropic particles to systematically erode the target’s structural integrity. When the accumulated energy reaches a critical state, it overrides the target’s defensive structure, allowing the frame to convert its attacks into powerful corroding damage and exploit the resulting instability.”
                 </div>
@@ -106,15 +107,15 @@
             <h4 class="sub-heading">CORROSION AFFIX MECHANICS</h4>
             <ul class="sys-list">
                 <li><strong>Stacking:</strong> Builds up to a maximum of 20 stacks.</li>
-                <li><strong>Activation:</strong> Applies [Executable] status to attacked enemies. When an Executable target falls below 25% HP, the character triggers Finishing Move on them.</li>
-                <li><strong>Damage Output:</strong> Corrosion DMG scales with the number of accumulated stacks. Deals primarily Affix DMG, and secondarily Elemental DMG.</li>
-                <li><strong>Restriction:</strong> [Executable] status is resistible by Boss-type enemies and enemies with Finisher Gauge.</li>
+                <li><strong>Activation:</strong> Overrides the target’s Armor Gauge, converting it into Finisher Gauge.<br><i>(Determing a well-structured Execution-trigger condition is up to Kuro, as I believe there are many other implementable options than Finisher Gauge conversion.</i></li>
+                <li><strong>Damage Output:</strong> Rupture DMG scales with the number of accumulated stacks. Deals primarily Affix DMG, and secondarily Elemental DMG.</li>
+                <li><strong>Restriction:</strong> Finishing Move does not trigger against regular Boss-type enemies who originally do not have Finisher Gauge.</li>
             </ul>
 
             <h4 class="sub-heading">STACK CONSUMPTION</h4>
             <ul class="sys-list">
-                <li>Holding Dodge while dodging incoming attacks consumes 3 stacks to trigger Speed Attack. Can trigger even when Corrosion is inactive, as long as the current stacks ≥ 3.</li>
-                <li>Consumes 5 stacks to trigger Finishing Move. Only triggers when Corrosion is active.</li>
+                <li>Holding Dodge while dodging incoming attacks consumes 3 stacks to trigger Speed Attack. Can trigger even when Rupture is inactive, as long as the current stacks ≥ 3.</li>
+                <li>When the target’s Armor Gauge has been fully depleted, consumes 5 stacks to trigger Finishing Move. Only triggers when Rupture is inactive.</li>
             </ul>
 
             <h4 class="sub-heading">DEACTIVATION</h4>
@@ -145,22 +146,23 @@
             
             <!-- SECTION 4: UNIFRAME PATCH NOTES -->
             <h3 class="data-heading">UNIFRAME PATCH NOTES</h3>
+            <p class='concept-text'><i>Granting Uniframes the premium S-Rank investment approach (guarantee on 60 pulls, 30 Inver Shards on duplicates, dedicated character CUB) is optional and is something for Kuro to determine.</i></p>
             <h4 class="sub-heading">UPDATE UNIFRAME GACHA BANNER</h4>
             <ul class="sys-list">
                 <li>Introduce exclusive R&D tickets, earned through Operation Uniframe.</li>
-                <li>Increase the pity threshold to 40 (the exact pity value is up to Kuro).</li>
+                <li>Increase the pity threshold to 60.</li>
                 <li>A duplicate Uniframe pull grants 30 Inver Shards.</li>
             </ul>
 
             <h4 class="sub-heading">FUTURE UNIFRAME UNITS</h4>
             <ul class="sys-list">
                 <li>Apply Time Lag Calculation to Signature Moves and Finishing Moves.</li>
-                <li>Grant them Corrosion DMG buffs via their 6-piece memory sets.</li>
+                <li>Grant them Rupture DMG buffs via their 6-piece memory sets.</li>
+                <li>Grant them CUBs.</li>
             </ul>
 
-            <h4 class="sub-heading">INVESTMENT & ENDGAME CONTENT</h4>
+            <h4 class="sub-heading">INVESTMENT</h4>
             <ul class="sys-list">
-                <li>Introduce Corrosion endgame content and stage modifiers.</li>
                 <li>Increase the availability of Uniframe investment materials through the Guild Shop.</li>
                 <li>Operation Uniframe can return as a main game mode, rewarding investment materials and exclusive R&D Uniframe Banner Tickets.</li>
             </ul>
@@ -181,7 +183,7 @@
                 <p class="concept-text">My proposal is to introduce a new class that enables Uniframe mechanics and supports Vanguards, encouraging more Vanguard releases in later patches.</p>
                 <p class="concept-text"><strong>Main Idea: Raider Class</strong></p>
                 <div class="sys-note">
-                    <strong>In-Game Description:</strong> “Focused on execution, has skills that manipulate enemy behavior turning them into executable targets while strengthening allies.”
+                    <strong>In-Game Description:</strong> “Focused on disruption, can manipulate enemy behavior and override their defenses while strengthening allies.”
                 </div>
                 <p class="concept-text">Raider is a new Uniframe class, whose roles are divided into a general role and a Uniframe specialization.</p>
             </div>
@@ -192,10 +194,10 @@
             <h3 class="data-heading">CLASS MECHANICS & SKILLS</h3>
             
             <h4 class="sub-heading">CLASS SKILL (MAX LEVEL)</h4>
-            <p class="concept-text">A Raider QTE grants 1 <b style="color: var(--accent-red);">Shatter</b> that increases the Extra DMG Bonus by 5% and the Raider's Elemental DMG Bonus by 5% to self and allies, up to a maximum of 4 stacks. When Raider enters the battlefield, grants 1 <b style="color: var(--accent-red);">Shatter</b>. On exit, consumes all available <b style="color: var(--accent-red);">Shatter</b> to deal 500% / 1000% / 1500% / 2000% Elemental DMG of the Raider's element.</p>
+            <p class="concept-text">Raider QTEs grants 1 <b style="color: var(--accent-red);">Shatter</b> that increases the Extra DMG Bonus by 5% and the Raider's Elemental DMG Bonus by 5% to self and allies, up to a maximum of 4 stacks. When Raider enters the battlefield, grants 1 <b style="color: var(--accent-red);">Shatter</b>. On exit, consumes all available <b style="color: var(--accent-red);">Shatter</b> to deal 500% / 1000% / 1500% / 2000% Elemental DMG of the Raider's element.</p>
 
             <h4 class="sub-heading">UNIFRAME SPECIALIZATION</h4>
-            <p class="concept-text">A QTE from a Raider unit mark the target nearest to the QTE Area of Effect as [Executable]. [Executable] status is resistible by Boss-type enemies and enemies with Finisher Gauge.<br>
+            <p class="concept-text">QTEs from a Raider unit mark the target nearest to the QTE Area of Effect as [Executable]. Does not apply to Boss-type enemies.<br>
                 <strong>[Executable]:</strong> Finishing Move can trigger against an Executable target.<br>
                 <span class="highlight">Note:</span> Applies to only one enemy per QTE trigger.</p>
 
@@ -203,7 +205,7 @@
             <p class="concept-text">Raider units retain standard Uniframe Skill mechanics, with specific enhancements applied to:</p>
             <ul class="sys-list">
                 <li><strong>Enhanced Speed Attack:</strong> In addition to dealing elemental Burst DMG, marks the target who performed the All-out Attack as [Executable].</li>
-                <li><strong>Enhanced Team:</strong> When any Uniframe in the team uses Finishing Move, grants the maximum number of Shatter stacks and increase the Raider Skill effect by 50% for 15s.</li>
+                <li><strong>Enhanced Team:</strong> When any Uniframe in the team uses Finishing Move, grants the maximum number of Shatter stacks and increase the Radier Skill effect by 50% for 15s.</li>
             </ul>
 
             <hr class="section-divider" />
@@ -258,18 +260,18 @@
             </ul>
 
             <h4 class="sub-heading">UNIFRAME GACHA BANNER</h4>
-                <ul class="sys-list">
+            <p class='concept-text'><i>Granting Uniframes the premium S-Rank investment approach (guarantee on 60 pulls, 30 Inver Shards on duplicates, dedicated character CUB) is optional and is something for Kuro to determine.</i></p>
+            <ul class="sys-list">
                 <li>Release a new Uniframe Raider.</li>
                 <li>Introduce exclusive Uniframe Banner R&D Tickets earned through Operation Uniframe.</li>
                 <li>Increase the pity threshold to 60.</li>
-                <li>100% guarantee for Raider units at 60 pulls.</li>
-                <li>100% guarantee for Vanguard units at 10 pulls.</li>
-                <li>A duplicate Raider copy grants 30 Inver Shards.</li>
+                <li>A duplicate Uniframe copy grants 30 Inver Shards.</li>
             </ul>
 
             <h4 class="sub-heading">FUTURE UNIFRAME UNITS</h4>
             <ul class="sys-list">
                 <li>Apply Time Lag Calculation to Signature Moves and Finishing Moves.</li>
+                <li>Grant them CUBs.</li>
             </ul>
 
             <h4 class="sub-heading">INVESTMENT</h4>
@@ -309,7 +311,7 @@
             <h3 class="data-heading">FUNCTIONALITY</h3>
             
             <h4 class="sub-heading">UNIVERSAL SET</h4>
-            <p class="concept-text">Triggering a 3-orb ping grants [Shatter]. The next attack consumes [Shatter] to deal Elemental DMG, and apply 1 stack of [Executable] on up to 5 targets. When a target is inflicted with 3 [Executable] stacks, Finishing Move can trigger against this target, with a 5 seconds countdown.</p>
+            <p class="concept-text">Triggering a 3-orb ping grants [Shatter]. The next attack consumes [Shatter] to deal Elemental DMG, and apply 1 stack of [Executable] on up to 3 targets. When a target is inflicted with 3 [Executable] stacks, Finishing Move can trigger against this target, with a 5 seconds countdown.</p>
 
             <h4 class="sub-heading">CHARACTER-SPECIALIZED SET</h4>
             <p class="concept-text">It functions the same as the universal set, with the only difference being the trigger condition for granting [Shatter], which adapts directly to the character’s unique kit.</p>
@@ -320,7 +322,7 @@
             <h3 class="data-heading">NOTES</h3>
             <ul class="sys-list">
                 <li><strong>Restriction:</strong> Equipping one 2-piece Uniframe Memory Set locks out others; a Uniframe cannot equip multiple sets of this category simultaneously.</li>
-                <li><strong>Finisher Gauge enemies:</strong> Cannot be executed via [Executable] in the presence of Finisher Gauge.</li>
+                <li><strong>Finisher Gauge enemies:</strong> Cannot be excuted via [Executable] in the presence of Finisher Gauge.</li>
                 <li><strong>Finishing Moves:</strong> Unusable against standard Boss-type enemies (excluding Uniframe Bosses like MC Solar).</li>
                 <li><strong>[Executable]:</strong> Opens a window for Uniframes to utilize Uniframe Skills against normal and elite enemies lacking the Finisher Gauge.</li>
                 <li><strong>Skill Inheritance:</strong> If an enemy dies without being executed, another enemy inherits [Executable]. If the enemy is executed or the 5-seconds countdown expires, [Executable] expires.</li>
@@ -331,6 +333,8 @@
             </div>
 
         </section>
+
+
         <a href="index.html" class="back-btn">&lt; RETURN TO DIRECTORY</a>
     </main>
             <!-- CREDITS BAR -->
